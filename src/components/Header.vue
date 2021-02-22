@@ -26,7 +26,6 @@
         <li class="nav-item">
             <button class="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug  hover:opacity-75" href="#pablo">
                 Contact
-                <i class="fa fa-envelope"></i>
             </button>
         </li>
       </ul>
@@ -35,17 +34,16 @@
 </nav>
 </template>
 
-<script>
-export default {
-  name: 'Header',
+<script lang="ts">
+import { Options, Vue } from 'vue-class-component';
+
+@Options({
+})
+export default class Header extends Vue {
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 
-    .initial {
-        width: 20rem;
-        background-color: skyblue;
-    }
 </style>

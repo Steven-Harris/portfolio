@@ -3,16 +3,19 @@
   <Picture/>
 </template>
 
-<script>
-import Picture from './components/Picture.vue';
+<script lang="ts">
+import { Options, Vue } from 'vue-class-component';
+
 import Header from './components/Header.vue';
-export default {
-  name: 'App',
+import Picture from './components/Picture.vue';
+
+@Options({
   components: {
-    Picture,
-    Header 
-  }
-}
+    Header,
+    Picture
+  },
+})
+export default class App extends Vue {}
 </script>
 
 <style>

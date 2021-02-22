@@ -1,0 +1,26 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Steven Harris'  personal portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Steven-Harris/portfolio.git"
+  },
+  "keywords": [
+    "portfolio",
+    "steven",
+    "harris",
+    "vue",
+    "web"
+  ],
+  "author": "Steven Harris <stevenharrisdev@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Steven-Harris/portfolio/issues"
+  },
+  "homepage": "https://github.com/Steven-Harris/portfolio#readme"
+}

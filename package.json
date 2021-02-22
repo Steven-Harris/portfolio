@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/Steven-Harris/portfolio/issues"
   },
-  "homepage": "https://github.com/Steven-Harris/portfolio#readme"
+  "homepage": "https://github.com/Steven-Harris/portfolio#readme",
+  "dependencies": {
+    "vue": "^3.0.5"
+  }
 }

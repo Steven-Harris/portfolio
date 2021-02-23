@@ -1,13 +1,12 @@
 <template>
-    <img  class="rounded-full  max-h-96" src="@/assets/img/main_photo.jpg"/>
+  <img
+    class="rounded-full border-8 border-gray-500"
+    src="@/assets/img/profile.jpeg"
+  />
 </template>
 
 <script>
 export default {
-  name: 'Picture',
-}
+  name: "Picture",
+};
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-</style>

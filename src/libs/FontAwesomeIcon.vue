@@ -18,21 +18,21 @@ export default defineComponent({
   props: {
     icon: {
       type: String,
-      required: true
+      required: true,
     },
     type: {
       type: String,
       default: "fas",
-      required: false
+      required: false,
     },
-    class: String
+    class: String,
   },
 
   setup(props) {
     const definition = computed(() =>
       findIconDefinition({
         prefix: props.type,
-        iconName: props.icon
+        iconName: props.icon,
       })
     );
 
@@ -41,6 +41,6 @@ export default defineComponent({
     const svgPath = computed(() => definition.value.icon[4]);
 
     return { width, height, svgPath };
-  }
+  },
 });
 </script>

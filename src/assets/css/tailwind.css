@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .timeline-container {
+    @apply relative pt-2 xs:pl-28 xs:pt-0 md:w-1/2 md:ml-auto md:pl-16;
+  }
+  .timeline-container-left {
+    @apply md:ml-0 md:mr-auto md:pl-0 md:pr-16;
+  }
+  .timeline-pointer {
+    @apply hidden md:block absolute inset-0 left-10 h-4 w-4 top-16 transform rotate-45 bg-pink-400 md:left-14;
+  }
+  .timeline-pointer-left {
+    @apply hidden md:block md:left-auto md:right-14;
+  }
+}

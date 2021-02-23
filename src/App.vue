@@ -1,18 +1,29 @@
 <template>
-  <Header/>
-  <Picture/>
+  <div class="bg-gray-700 font-mono mx-auto overflow">
+    <Header />
+    <AboutMe />
+    <Experience />
+    <Contributions />
+    <Skills />
+  </div>
 </template>
 
 <script lang="ts">
-import { Options, Vue } from 'vue-class-component';
+import { Options, Vue } from "vue-class-component";
 
-import Header from './components/Header.vue';
-import Picture from './components/Picture.vue';
+import Header from "./components/Header.vue";
+import AboutMe from "./components/AboutMe.vue";
+import Experience from "./components/Experience.vue";
+import Contributions from "./components/Contributions.vue";
+import Skills from "./components/Skills.vue";
 
 @Options({
   components: {
     Header,
-    Picture
+    AboutMe,
+    Experience,
+    Contributions,
+    Skills,
   },
 })
 export default class App extends Vue {}
@@ -20,11 +31,6 @@ export default class App extends Vue {}
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: white;
 }
 </style>

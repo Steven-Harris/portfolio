@@ -29,12 +29,12 @@
         </p>
         <div class="px-7 pt-6 text-center md:text-left">
           <button
-            class="mx-3 mt-3 rounded-full items-center shadow bg-blue-500 px-4 py-2 text-white hover:bg-blue-400"
+            class="mx-3 mt-3 rounded-full items-center shadow bg-pink-400 px-4 py-2 text-white hover:bg-pink-300"
           >
             Download CSV
           </button>
           <button
-            class="mx-3 mt-3 shadow border-blue-500 border-2 rounded-full px-4 py-2 text-blue-500 hover:bg-blue-500 hover:text-white"
+            class="mx-3 mt-3 shadow border-yellow-400 border-2 rounded-full px-4 py-2 text-yellow-400 hover:bg-yellow-300 hover:text-black"
           >
             Contact
           </button>

@@ -1,10 +1,13 @@
 <template>
-  <div class="bg-gray-700 font-mono mx-auto overflow">
+  <div class="bg-gray-700 font-mono mx-auto overflow text-white">
     <Header />
     <AboutMe />
     <Experience />
     <Contributions />
     <Skills />
+  </div>
+  <div class="background">
+    <div class="shape-1"></div>
   </div>
 </template>
 
@@ -28,9 +31,3 @@ import Skills from "./components/Skills.vue";
 })
 export default class App extends Vue {}
 </script>
-
-<style>
-#app {
-  color: white;
-}
-</style>

@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h1 class="text-center text-4xl">Experience</h1>
+    <h1>Experience</h1>
     <div class="relative container mx-auto px-6 flex flex-col space-y-8">
       <div
         class="absolute z-0 w-1 mt-10 bg-pink-400 shadow-md inset-0 left-17 md:mx-auto md:right-0 md:left-0"

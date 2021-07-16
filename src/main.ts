@@ -1,8 +1,9 @@
-import '@/assets/css/tailwind.css';
+import "@/assets/css/styles.css";
+import "@/assets/css/tailwind.css";
 
-import { FontAwesomeIcon } from '@/plugins/font-awesome';
-import { createApp } from 'vue';
+import { FontAwesomeIcon } from "@/plugins/font-awesome";
+import { createApp } from "vue";
 
-import App from './App.vue';
+import App from "./App.vue";
 
 createApp(App).component("fa", FontAwesomeIcon).mount("#app");

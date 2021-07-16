@@ -1,5 +1,5 @@
 <template>
-  <div class="block w-full p-5 md:p-32">
+  <div class="z-10 block w-full p-5 md:p-32">
     <div class="block md:flex md:flex-row md:mx-48 h-full md:h-96">
       <Picture />
       <div>
@@ -42,14 +42,18 @@
       </div>
     </div>
   </div>
+  <BlobOne class="z-0" />
 </template>
 
 <script lang="ts">
 import { Options, Vue } from "vue-class-component";
 import Picture from "./Picture.vue";
+
+import BlobOne from "./building-blocks/BlobOne.vue";
 @Options({
   components: {
     Picture,
+    BlobOne,
   },
 })
 export default class AboutMe extends Vue {}

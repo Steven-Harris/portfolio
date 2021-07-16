@@ -1,0 +1,62 @@
+<template>
+  <div class="z-10 block w-full p-5 md:p-32">
+    <div class="block md:flex md:flex-row md:mx-48 h-full md:h-96">
+      <Picture />
+      <div>
+        <h1
+          class="md:mx-10 text-4xl md:text-6xl col-span-2 text-center md:text-left"
+        >
+          Steven Harris
+        </h1>
+        <h4
+          class="px-10 text-1xl text-gray-400 mb-2 col-span-2 text-center md:text-left"
+        >
+          Software Engineer
+        </h4>
+        <p class="px-10 text-gray-300 text-justify md:text-left">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget
+          vulputate ligula, vitae commodo tellus. Vivamus a ex sit amet odio
+          euismod vestibulum et sed orci. Etiam rutrum at mauris vitae
+          pellentesque. Morbi pulvinar nibh et velit rutrum tristique.
+          Pellentesque vulputate, libero vel dictum porta, augue tortor
+          ullamcorper lectus, et rutrum tortor erat et dui. Donec mattis nulla a
+          tempor bibendum. Phasellus placerat nisl ultrices dolor volutpat
+          sollicitudin. In nec magna ornare, eleifend urna vel, consequat est.
+          Phasellus sit amet tellus non felis semper bibendum. Morbi elit urna,
+          malesuada sed arcu quis, condimentum congue enim. Nunc at egestas
+          nisl. Mauris tincidunt purus et mauris fermentum, eget porttitor ipsum
+          pharetra. Nam maximus purus ultrices consectetur iaculis.
+        </p>
+        <div class="px-7 pt-6 text-center md:text-left">
+          <button
+            class="mx-3 mt-3 rounded-full items-center shadow bg-pink-400 px-4 py-2 text-white hover:bg-pink-300"
+          >
+            Download CSV
+          </button>
+          <button
+            class="mx-3 mt-3 shadow border-yellow-400 border-2 rounded-full px-4 py-2 text-yellow-400 hover:bg-yellow-300 hover:text-black"
+          >
+            Contact
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <BlobOne class="z-0" />
+</template>
+
+<script lang="ts">
+import { Options, Vue } from "vue-class-component";
+import Picture from "./Picture.vue";
+
+import BlobOne from "./building-blocks/BlobOne.vue";
+@Options({
+  components: {
+    Picture,
+    BlobOne,
+  },
+})
+export default class AboutMe extends Vue {}
+</script>
+
+<style></style>

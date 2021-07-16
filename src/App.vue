@@ -1,26 +1,33 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="bg-gray-700 font-mono mx-auto overflow text-white">
+    <Header />
+    <AboutMe />
+    <Experience />
+    <Contributions />
+    <Skills />
+  </div>
+  <div class="background">
+    <div class="shape-1"></div>
+  </div>
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
+<script lang="ts">
+import { Options, Vue } from "vue-class-component";
 
-export default {
-  name: 'App',
+import Header from "./components/Header.vue";
+import AboutMe from "./components/AboutMe.vue";
+import Experience from "./components/Experience.vue";
+import Contributions from "./components/Contributions.vue";
+import Skills from "./components/Skills.vue";
+
+@Options({
   components: {
-    HelloWorld
-  }
-}
+    Header,
+    AboutMe,
+    Experience,
+    Contributions,
+    Skills,
+  },
+})
+export default class App extends Vue {}
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
